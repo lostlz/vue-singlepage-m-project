@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import index from './pages/index.vue'
-// import mine from './pages/mine.vue'
-
+import mine from './pages/mine.vue'
+import find from './pages/find.vue'
 
 Vue.use(Router)
 
 export default new Router({
   mode: 'history',
-  base: process.env.BASE_URL,
+  base: '/ctrip/',
   routes: [
     {
       path: '/',
@@ -18,14 +18,12 @@ export default new Router({
     {
       path: '/find/',
       name: 'find',
-      //延迟加载路由
-      component: () => import(/* webpackChunkName: "about" */ './pages/find.vue')
+      component: find
     },
     {
       path: '/mine/',
       name: 'mine',
-      //延迟加载路由
-      component: () => import(/* webpackChunkName: "about" */ './pages/mine.vue')
+      component: mine
     }
   ]
 })
