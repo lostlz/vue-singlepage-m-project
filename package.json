@@ -1,25 +1,34 @@
 {
-  "name": "hnb-house-loan-m",
-  "version": "0.1.0",
+  "name": "vue-singlepage-m-project",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "postcss-px2rem": "^0.3.0",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.1",
     "@vue/cli-service": "^3.0.1",
+    "babel-plugin-component": "^1.1.1",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
+    "mint-ui": "^2.2.13",
+    "vue-lazyload": "^1.2.6",
     "vue-template-compiler": "^2.5.17"
   },
   "postcss": {
     "plugins": {
-      "autoprefixer": {}
+      "autoprefixer": {},
+      "postcss-px2rem": {
+        "remUnit": 75,
+        "baseDpr": 2
+      }
     }
   },
   "browserslist": [

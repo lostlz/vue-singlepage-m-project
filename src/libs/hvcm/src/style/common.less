@@ -1,0 +1,35 @@
+@import (reference) "var.less";
+
+
+.border(@width:1px,@color:@borderColor) {
+  border: @width solid @color; /*no*/
+}
+
+.borderT(@width:1px,@color:@borderColor) {
+  border-top: @width solid @color; /*no*/
+}
+
+.borderB(@width:1px,@color:@borderColor) {
+  border-bottom: @width solid @color; /*no*/
+}
+
+.borderL(@width:1px,@color:@borderColor) {
+  border-left: @width solid @color; /*no*/
+}
+
+.borderR(@width:1px,@color:@borderColor) {
+  border-right: @width solid @color; /*no*/
+}
+
+
+
+/*显示多行显示，超出部分用省略号显示*/
+.text-ellipsis-multi(@line:2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @line; //（行数）
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+}
+
