@@ -2,8 +2,9 @@
 
 ## 项目介绍
 
-本项目基于vue-cli3 + mint-ui集成的单页面应用脚手架，默认支持less
+本项目基于vue-cli3 + mint-ui集成的单页面应用脚手架
 
+- 支持less
 - 屏幕适配方案 flexible + postcss-px2rem
 - UI库 mint-ui
 - 图片懒加载插件 vue-lazyload
